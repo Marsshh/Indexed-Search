@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+
+    <header>
+	<!--SELECTOR-->
+    <label class="titulo" for="dataTypeSelector">Selecciona el tipo de datos:</label>
+    <div class="radio-input">
+      <label>
+        <input class="radio-button" value="pokemon" name="dataType" type="radio" onclick="updateSelectedDataType()">
+        <span>Pokémon</span>
+      </label>
+    
+      <label>
+        <input class="radio-button" value="municipis" name="dataType" type="radio" onclick="updateSelectedDataType()">
+        <span>Municipis</span>
+      </label>
+    
+      <label>
+        <input class="radio-button" value="movies" name="dataType" type="radio" onclick="updateSelectedDataType()">
+        <span>Películas</span>
+      </label>
+    
+      <label>
+        <input class="radio-button" value="earthMeteorites" name="dataType" type="radio" onclick="updateSelectedDataType()">
+        <span>Meteoritos</span>
+      </label>
+      
+      <span class="selection"></span>
+    </div>
+    
+    
+
+    <!-- BOTONS -->
+    <button onclick="reloadPage()">Recarregar Pàgina</button>
+    <button onclick="orderList('asc')">Ordenar Ascendente</button>
+    <button onclick="orderList('desc')">Ordenar Descendente</button>
+    <input class="buscador" type="text" id="searchInput" value="" placeholder="Search" />
+    <!-- <button onclick="searchList()">Buscar</button> -->
+    <button onclick="calcMitjana()">Mitjana</button>
+    <button onclick="printList()">Imprimir</button>
+    <button onclick="showChart()">Gràfic</button>
+  </header>
+    <!-- TAULA -->
+    <div id="resultat"></div>
+
+    <!-- GRAFICS -->
+    <div class="chart-container" style="position: relative; width: 700px">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
