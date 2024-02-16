@@ -32,6 +32,7 @@ This project was made for an school assignment.
 ### Screenshots:
 
 ![Data table](https://github.com/Marsshh/Indexed-Search/blob/master/capturas/Captura1.png?raw=true)
-![Chart](https://github.com/Marsshh/Indexed-Search/blob/master/capturas/Captura2.png?raw=true)
+![Chart](https://github.com/Marsshh/Indexed-Search/blob/master/capturas/captura2.png?raw=true)
+
 
 
